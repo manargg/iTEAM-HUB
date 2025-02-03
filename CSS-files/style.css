@@ -3,6 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+:root{
+  --Gold: #EB7E40;
+  --Cyan: #106379;
+  --Desert-Rose: #FBE5D9;
+  --Light-Cyan: #21A8AA;
+  --Light-Gray: #DBDBDB;
+
+  --Black: #000000;
+  --White: #F3F3F3;
+}
+
 h1,h2,h3,h4,h5.h6{
   font-family: "Poppins", serif;
   font-weight: 700;
@@ -12,17 +23,23 @@ h1,h2,h3,h4,h5.h6{
 body{
   font-family: "Poppins", serif;
   font-style: normal;
+  font-size: 14px;
 }
 img{
  max-width: 100%;
  width: 50%;
  height: auto;
 }
+
+/*===========================
+    The Resources Section
+=============================*/
+
 .container{
   margin-top: 200px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, minmax(250px, 400px));
+  grid-template-columns: repeat(3, minmax(250px, 200px));
   gap: 20px;
   justify-content: center;
   align-items: center;
@@ -37,12 +54,37 @@ img{
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+.card h3{
+  color: var(--Light-Cyan);
+  font-size: 1.20em;
+  
+}
+.card p{
+  color: var(--Cyan);
+  font-size: 0.9em;
+  text-align: center;
 
 }
 
+.btn-card{
+  color: var(--White);
+  background-color: var(--Cyan);
+  padding: 8px 15px;
+  border: none;
+  font-weight: 600;
+  margin-top: 10px;
+}
 
-
-
+.btn-card:hover {
+  background: linear-gradient(135deg, var(--Cyan), #005f73); /* Distinct gradient effect */
+  color: var(--White);
+  transform: translateY(-0.2px) scale(1.02); /* Lift effect */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*===========================
+   End of Resources Section
+=============================*/
 
 
 
