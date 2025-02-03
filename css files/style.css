@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+  --Gold: #EB7E40;
+  --Cyan: #106379;
+  --Desert-Rose: #FBE5D9;
+  --Light-Cyan: #21A8AA;
+  --Light-Gray: #DBDBDB;
+  --Black: #000000;
+  --White: #F3F3F3;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+ 
+}
+
+
+/*navbar and logo*/
+nav{
+width: 100%;
+padding: 20px 0px;
+background-color: #106379;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-family: "Poppins", serif;
+font-style: normal;
+
+}
+
+.logo-icon{
+  max-width: 50px;
+  position: relative;
+  top:30px;
+  margin-left: 50px;
+}
+.nam-web{
+  color: #EB7E40;
+  font-family: "Poppins", serif;
+  font-style: normal;
+  font-weight: 700;
+  position: relative;
+  top:-30px;
+  left: 110px;
+}
+
+
+.menu-head {
+  list-style: none;
+  
+}
+
+.menu-iteam1{
+  padding-right: 30px;
+   display: inline;
+   
+}
+
+a{ 
+  text-decoration: none;
+  font-weight: 700px;
+  color:#DBDBDB;
+}
+
+button{
+  width: 80px;
+  height: 25px;
+  background-color:#EB7E40;
+  border-radius: 20px;
+  font-weight: 700;
+  color:#DBDBDB;
+  border: #DBDBDB;
+}
+/* End navbar and logo*/
+
+
+
+  /*About body content*/
+    .container{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      
+    }
+  .paragraph{
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #106379;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 300px;
+    margin-top: 200px;
+    
+  }
+  span{
+    color: #EB7E40;
+  }
+  .img{
+    width:500px ;
+    height: auto;
+    margin-right: 300px;
+    margin-top: 150px;
+  }
+  /*End About body content*/
+  
+/*tital-paragraph-div*/
+
+.tital-paragraph-div{
+  width: 100%;
+  background-color: #FBE5D9;
+  text-align: center;
+  margin-top: 200px;
+  color: #106379;
+  font-family: "Poppins", serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.title{
+padding-top: 20px;
+
+}
+
+.t-papag{
+  padding-bottom: 20px;
+}
+/*End tital-paragraph-div*/
+
+
