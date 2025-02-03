@@ -37,48 +37,49 @@ body{
 /*navbar and logo*/
 nav{
   width: 100%;
-  padding: 20px 0px;
+  padding: 15px 100px;
   background-color: #106379;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "Poppins", serif;
   font-style: normal;
-  
+  box-sizing: border-box;
   }
-  
+  .logo{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
   .logo-icon{
     max-width: 50px;
-    position: relative;
-    top:30px;
-    margin-left: 50px;
+    
   }
   .nam-web{
     color: #EB7E40;
     font-family: "Poppins", serif;
     font-style: normal;
     font-weight: 700;
-    position: relative;
-    top:-30px;
-    left: 110px;
-  }
-  
-  
-  .menu-head {
-    list-style: none;
     
   }
   
-  .menu-iteam1{
-    padding-right: 30px;
-     display: inline;
+  .menu-head {
+    list-style: none;
+    display: flex;
+     column-gap: 40px;
      
   }
+  
   
   a{ 
     text-decoration: none;
     font-weight: 700px;
     color:#DBDBDB;
+  }
+  a:hover{
+    
+color:#EB7E40;
+
   }
   
   button{
@@ -89,6 +90,11 @@ nav{
     font-weight: 700;
     color:#DBDBDB;
     border: #DBDBDB;
+  }
+  button:hover{
+    transform: translateY(-0.2px) scale(1.02); /* Lift effect */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
   }
   /* End navbar and logo*/
   
