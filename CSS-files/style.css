@@ -13,7 +13,11 @@
   --Black: #000000;
   --White: #F3F3F3;
 }
+a{
+  text-decoration: none;
+  color: var(--White);
 
+}
 h1,h2,h3,h4,h5.h6{
   font-family: "Poppins", serif;
   font-weight: 700;
@@ -24,6 +28,8 @@ body{
   font-family: "Poppins", serif;
   font-style: normal;
   font-size: 14px;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -39,18 +45,17 @@ body{
   gap: 20px;
   justify-content: center;
   align-items: center;
-  
 }
 .card{
   background-color: #f0f0f0;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  
 }
 .card img{
   width: 100%;
@@ -89,5 +94,56 @@ body{
    End of Resources Section
 =============================*/
 
+footer{
+  background-color: var(--Cyan);
+  position:static;
+  bottom: 0;
+  width: 100%;
+  margin-top: 100px;
+  height: 80px;
+  padding-top: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
 
+.first{
+  padding-inline: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
 
+.footer-icons i{
+  color: var(--White);
+  border-radius: 2px;
+  font-size: 15px;
+  padding: 1px;
+}
+
+.footer-icons i:hover{
+  background-color: var(--Gold);
+}
+.logo-footer{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding-bottom: 10px;
+}
+.logo-footer img{
+  width: 25px;
+}
+.logo-footer span{
+  color: var(--Gold);
+}
+.first{
+  border-bottom: 1px solid var(--White);
+}
+.last{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--White);
+  padding-top: 15px;
+  font-size: 12px;
+}
