@@ -94,6 +94,10 @@ body{
    End of Resources Section
 =============================*/
 
+
+/*===========================
+   the footer Section
+=============================*/
 footer{
   background-color: var(--Cyan);
   position:static;
@@ -147,3 +151,6 @@ footer{
   padding-top: 15px;
   font-size: 12px;
 }
+/*===========================
+   End of footer Section
+=============================*/
