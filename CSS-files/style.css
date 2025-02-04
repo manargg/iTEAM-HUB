@@ -34,9 +34,9 @@ body{
 }
 
 
-
-
-/*navbar and logo*/
+/*===================
+    navbar and logo
+====================*/
 nav{
   width: 100%;
   padding: 10px 100px;
@@ -49,7 +49,9 @@ nav{
   box-sizing: border-box;
   position: fixed;
   top: 0;
-  }
+}
+
+
 .logo{
   display: flex;
   align-items: center;
@@ -64,31 +66,31 @@ nav{
   font-family: "Poppins", serif;
   font-style: normal;
   font-weight: 700;
-  
 }
 
 .menu-head {
   list-style: none;
   display: flex;
   column-gap: 40px;
-  
 }
 
 .menu-head a:hover{
-
   color:#EB7E40;
-  }
-  menu.purger{
-    display: none;
-  }
+}
+
+.menu-purger i{
+  display: none;
+  font-size: 22px;
+  position: relative;
+  color: var(--Gold);
+  
+}
 
 a{ 
   text-decoration: none;
   font-weight: 700px;
   color:#DBDBDB;
 }
-
- 
 
 button{
   width: 80px;
@@ -106,32 +108,33 @@ button{
   cursor: pointer;
 }
 
-  /* End navbar and logo*/
+/*===================
+  End navbar and logo
+======================*/
   
   
   
-/*About body content*/
+/*=================
+About body content
+===================*/
 .about-container{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-block: 150px 100px;
-    
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-block: 200px 150px;
+  font-weight: 600;
+  box-sizing: border-box;
   }
-  .about-container span{
-    color: var(--Gold);
-  }
+.about-container span{
+  color: var(--Gold);
+}
 .paragraph{
-  font-family: "Poppins", serif;
-  font-weight: 700;
-  font-style: normal;
   color: #106379;
   text-align: center;
   font-size: 25px;
-  
-  
 }
+
 .logo span{
   color: #EB7E40;
 }
@@ -151,15 +154,22 @@ button{
     margin-top: 150px;
     color: #106379;
   }
+  .tital-paragraph-div span{
+    color: var(--Gold);
+  }
 
-  .title{
+.title{
   padding-top: 20px;
   }
   
   .t-papag{
     padding-bottom: 20px;
     font-weight: 400;
+    width: 35%;
+    margin: auto;
+    font-weight: 600;
   }
+
   /*End tital-paragraph-div*/
   
   
@@ -297,366 +307,232 @@ footer{
 
 
 
+  /*****************************************
+    media query for large screens
 
-
-/***************************************************************************/
-@media(min-width:1300px)and (max-width:1699px){
-
-
-  
-  
-    /*About body content*/
-      .about-container{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        
-      }
-    .paragraph{
-      font-family: "Poppins", serif;
-      font-weight: 600;
-      font-style: normal;
-      color: #106379;
-      text-align: center;
-      font-size: 20px;
-      margin-left: 200px;
-      margin-top: 200px;
-      
+  ******************************************/
+  @media (max-width: 1200px) and (min-width: 919px)
+  {
+  /*About body content*/
+  .about-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-block: 200px 150px;
+    column-gap: 50px;
+    padding-inline:15px;
     }
-    span{
-      color: #EB7E40;
-    }
-    .img{
-      width:450px ;
-      height: auto;
-      margin-right: 200px;
-      margin-top: 150px;
-    }
+
+  .paragraph{
+    font-size: 18px;
+  }
+
+  .img{
+    width:450px ;
+  }
     /*End About body content*/
+
+  }
+
+/*****************************************
+   media query for medium screens
+******************************************/
+
+  @media (max-width: 920px) {
+    /*navbar and logo*/
+  nav{
+    padding: 10px 50px;
+    }
+    
+  .menu-head {
+    column-gap: 20px;
+  }
+
+  /*About body content*/
+  .about-container{
+    margin-block: 150px 100px;
+    box-sizing:border-box;
+    padding-inline: 50px;
+    column-gap: 30px;
+  }
+ 
+  .paragraph{
+    font-size: 13px;
+    line-height: 20px;
+  }
+ 
+  .img{
+    width:250px ;
+  }
+
+  /*tital-paragraph-div*/
   
+  .tital-paragraph-div{
+    width: 100%;
+    background-color: #FBE5D9;
+    text-align: center;
+    margin-top: 100px;
+    color: #106379;
+  }
+  .title{
+   font-size: 1.3em;
+  }
+  .t-papag{
+    font-size: 13px;
+  }
+
+/*The Resources Section*/
+
+.container{
+  grid-template-columns: repeat(2,250px);
+ }
+
+}
+
+/***************************************
+    media query for medium screens
+****************************************/
+
+@media (max-width:674px)  {
+
+  /*navbar and logo*/
+    
+    .menu-head {
+      display: none;
+    }
+    /*menu purger*/
+    
+  .menu-purger i{
+     display: inline;
+  }
+    
+
+  /*About body content*/
+    .about-container{
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      margin-block: 50px 100px;
+    }
+  .paragraph{
+    font-size: 15px;
+    margin-top: 50px;
+    
+  }
+  span{
+    color: #EB7E40;
+  }
+  .img{
+    margin-top: 100px;
+  }
+
+  /*tital-paragraph-div*/
+  
+  .tital-paragraph-div{
+    margin-top: 100px;
+  }
+
+/*The Resources Section*/
+
+.container{
+  grid-template-columns: repeat(2,220px);
+}
+
+/*the footer Section*/
+
+
+.first{
+  padding-inline: 40px;
+}
+
 }
 
 
+/***************************************
+     media query for small screens
+****************************************/
 
-/*******************************************************************************************************/
-@media(min-width:920px)and (max-width:1299px){
-
-
-    
-    
-      /*About body content*/
-        .about-container{
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-          
-        }
-      .paragraph{
-        font-family: "Poppins", serif;
-        font-weight: 400;
-        font-style: normal;
-        color: #106379;
-        text-align: center;
-        font-size: 15px;
-        margin-left: 100px;
-        margin-top: 200px;
-        
-      }
-      span{
-        color: #EB7E40;
-      }
-      .img{
-        width:400px ;
-        height: auto;
-        margin-right: 100px;
-        margin-top: 150px;
-      }
-      /*End About body content*/
-     
-    }
-    
-/*******************************************************************************************************/
-@media(min-width:675px)and (max-width:919px){
-
-
+@media (max-width:499px) and (min-width:320px){
   /*navbar and logo*/
   nav{
-    width: 100%;
-    padding: 15px 50px;
-    background-color: #106379;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "Poppins", serif;
-    font-style: normal;
-    box-sizing: border-box;
-    }
-    .logo{
-      display: flex;
-      align-items: center;
-      column-gap: 10px;
-    }
-    .logo-icon{
-      max-width: 50px;
-      
-    }
-    .nam-web{
-      color: #EB7E40;
-      font-family: "Poppins", serif;
-      font-style: normal;
-      font-weight: 700;
-      
+    padding: 10px 20px;
     }
     
-    .menu-head {
-      list-style: none;
-      display: flex;
-       column-gap: 10px;
-    }
-    menu.purger{
-      display: none;
-    }
-    
-    /* End navbar and logo*/
-    
-    
-    
-      /*About body content*/
-        .about-container{
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-         
-          
-        }
-      .paragraph{
-        font-family: "Poppins", serif;
-        font-weight: 400;
-        font-style: normal;
-        color: #106379;
-        text-align: center;
-        font-size: 15px;
-        margin: auto;
-        margin-top: 200px;
-        
-      }
-      span{
-        color: #EB7E40;
-      }
-      .img{
-        width:300px ;
-        height: auto;
-        margin: auto;
-        margin-top: 150px;
-      }
-      /*End About body content*/
-      
-    
-    
-  
-  /*===========================
-      The Resources Section
-  =============================*/
-  
-  .container{
-    margin-top: 100px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3,200px);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
+  .logo a img{
+    width: 30px;
   }
-  .card{
-    background-color: #f0f0f0;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+  .logo a span{
+    font-size: 12px;
+  }
+
+  /*About body content*/
+
+  .about-container{
+    margin-block: 10px 50px;
+    box-sizing:border-box;
+    padding-inline: 20px;
+    column-gap: 30px;
+  }
+  
+  .paragraph{
+    font-size: 13px;
+    line-height: 20px;
+  }
+  
+  .img{
+    width:250px ;
+  }
+
+/*tital-paragraph-div*/
+  
+  .tital-paragraph-div{
+    width: 100%;
+    background-color: #FBE5D9;
     text-align: center;
+    margin-top: 100px;
+    color: #106379;
+    padding-inline: 20px;
+    box-sizing: border-box;
   }
-  
+  .title{
+   font-size: 15px;
+  }
+  .t-papag{
+    font-size: 10px;
+    
   }
 
-  /****************************************************************************************/
 
-    
-    
-  @media (min-width:500px)and (max-width:674px){
+/*The Resources Section*/
 
+.container{
+  grid-template-columns: repeat(1,220px);
+}
 
-    /*navbar and logo*/
-    nav{
-      width: 100%;
-      padding: 15px 50px;
-      background-color: #106379;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-family: "Poppins", serif;
-      font-style: normal;
-      box-sizing: border-box;
-      }
-      
-      
-      
-      .menu-head {
-        display: none;
-         
-      }
+/*the footer Section*/
+footer{
+  height: 60px;
+}
 
-      /*menu purger*/
-      
-      .menu-purger{
-        
-        margin: 20px auto;
-        width: 20px;
-        height: 14px;
-        cursor: pointer;
-        position: relative;
-       }
-       
-       .menu-purger span{
-        height: 2px;
-        position: absolute;
-        width: 100%;
-        left: 0;
-        transition: all 0.3s ease;
-        background-color: #EB7E40;
-              }
+.first{
+  padding-inline: 20px;
+}
 
+.footer-icons i{
+  font-size: 15px;
+}
 
-      .menu-purger span:first-child{
+.footer-icons{
+  margin-bottom: 10px;
+}
+.logo-footer span{
+  font-size: 12px;
+}
 
-        top: 0;
-      }
-      
-      .menu-purger span:nth-child(2){
-
-        top: 6px;
-      }
-
-      
-      .menu-purger span:last-child{
-
-        top: 12px;
-      }
-      
-
-      .menu-purger:hover span:first-child{
-        top:6px;
-        transform:rotate(45deg) ;
-    }
-  
-      .menu-purger:hover span:last-child{
-        top:6px;
-          transform:rotate(-45deg) ;
-      }
-      .menu-purger:hover span:nth-child(2){
-
-        opacity: 0;
-      }
-
-
-
-              /*End menu purger*/
-      
-      /* End navbar and logo*/
-      
-      
-        /*About body content*/
-          .about-container{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-           
-            
-          }
-        .paragraph{
-          font-family: "Poppins", serif;
-          font-weight: 400;
-          font-style: normal;
-          color: #106379;
-          text-align: center;
-          font-size: 15px;
-          margin: auto;
-          margin-top: 100px;
-          
-        }
-        span{
-          color: #EB7E40;
-        }
-        .img{
-          width:300px ;
-          height: auto;
-          margin: auto;
-          margin-top: 100px;
-        }
-        /*End About body content*/
-        
-      /*tital-paragraph-div*/
-      
-      .tital-paragraph-div{
-        width: 100%;
-        background-color: #FBE5D9;
-        text-align: center;
-        margin-top: 150px;
-        color: #106379;
-        font-family: "Poppins", serif;
-        font-style: normal;
-       
-      }
-      .title{
-      padding-top: 20px;
-      font-weight: 600;
-      font-size: 15px;
-      
-      }
-      
-      .t-papag{
-        font-size: 12px;
-        padding-bottom: 20px;
-        font-weight: 400;
-      }
-      /*End tital-paragraph-div*/
-      
-      
-      
-    
-    /*===========================
-        The Resources Section
-    =============================*/
-    
-    .container{
-      margin-top: 100px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 30px;
-      margin-bottom: 100px;
-    }
-    .card{
-      background-color: #f0f0f0;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      width: 60%;
-    }
-    
-    }
-  
-    /****************************************************************************************/
-  
-      
-      
-      
+.last{
+  padding-top: 5px;
+  font-size: 10px;
+ }
+}
