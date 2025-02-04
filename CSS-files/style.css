@@ -39,7 +39,7 @@ body{
 /*navbar and logo*/
 nav{
   width: 100%;
-  padding: 15px 100px;
+  padding: 10px 100px;
   background-color: #106379;
   display: flex;
   justify-content: space-between;
@@ -47,6 +47,8 @@ nav{
   font-family: "Poppins", serif;
   font-style: normal;
   box-sizing: border-box;
+  position: fixed;
+  top: 0;
   }
 .logo{
   display: flex;
@@ -54,7 +56,7 @@ nav{
   column-gap: 10px;
 }
 .logo-icon{
-  max-width: 50px;
+  max-width: 40px;
   
 }
 .nam-web{
@@ -114,7 +116,7 @@ button{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-block:  100px;
+    margin-block: 150px 100px;
     
   }
   .about-container span{
@@ -282,6 +284,10 @@ footer{
   color: var(--White);
   padding-top: 15px;
   font-size: 12px;
+}
+
+.last span:last-child:hover{
+  cursor: pointer;
 }
 
 /*===========================
