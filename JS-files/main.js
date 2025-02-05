@@ -13,7 +13,7 @@ function closeMenu(){
 listHum.addEventListener("click", menu);
 closeIcon.addEventListener("click", closeMenu);
 
-document.querySelectorAll("#leftside-nav").forEach(link => {
+document.querySelectorAll("#leftside-nav a").forEach(link => {
     link.addEventListener("click", () => {
         leftsideNav.classList.remove("active");
     })
