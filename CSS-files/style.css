@@ -49,24 +49,22 @@ nav{
   box-sizing: border-box;
   position: fixed;
   top: 0;
+  z-index: 100;
 }
 
 
-.logo{
+.logo a{
   display: flex;
   align-items: center;
-  column-gap: 10px;
+  justify-content: center;
+  column-gap: 5px;
+  color: var(--Gold);
 }
 .logo-icon{
   max-width: 40px;
   
 }
-.nam-web{
-  color: #EB7E40;
-  font-family: "Poppins", serif;
-  font-style: normal;
-  font-weight: 700;
-}
+
 
 .menu-head {
   list-style: none;
@@ -80,10 +78,13 @@ nav{
 
 .menu-purger i{
   display: none;
-  font-size: 22px;
+  font-size: 25px;
   position: relative;
   color: var(--Gold);
-  
+}
+
+.menu-purger:hover{
+  cursor: pointer;
 }
 
 a{ 
@@ -106,6 +107,58 @@ button{
   transform: translateY(-0.2px) scale(1.02); /* Lift effect */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+
+/*================nav leftside==================*/
+.leftside-nav{
+  position: absolute;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  background-color: var(--Cyan);
+  height: 100vh;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.leftside-nav.active{
+  transform: translateX(300px);
+}
+
+.leftside-nav .logo{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 100px;
+}
+
+.logo i{
+  color: var(--Gold);
+  font-size: 20px;
+}
+.logo i:hover{
+  cursor: pointer;
+}
+.nav-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+ margin-top: -150px;
+  
+}
+.nav-links a:hover{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.leftside-nav span
+{
+padding-bottom: 10px;
 }
 
 /*===================
