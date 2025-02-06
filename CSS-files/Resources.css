@@ -5,13 +5,11 @@ body {
     font-family: Poppins;
     font-weight: 700;
     font-size: 1vw;
-
 }
 
 .header {
     width: 100%;
     max-height: 40vh;
-
     background-color: #FBE5D9;
     display: flex;
     justify-content: space-between;

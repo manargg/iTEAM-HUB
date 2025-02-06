@@ -62,7 +62,6 @@ nav{
 }
 .logo-icon{
   max-width: 40px;
-  
 }
 
 
@@ -148,7 +147,7 @@ button{
   flex-direction: column;
   align-items: center;
   row-gap: 50px;
- margin-top: -150px;
+  margin-top: -150px;
   
 }
 .nav-links a:hover{
@@ -244,9 +243,9 @@ About body content
 }
 .card{
   background-color: #f0f0f0;
-  padding: 15px;
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -279,6 +278,7 @@ About body content
   width: 100px;
   text-align: center;
   box-sizing:content-box;
+  padding: 5px;
 
 }
 
