@@ -11,10 +11,15 @@ body {
     width: 100%;
     max-height: 40vh;
     background-color: #FBE5D9;
+    padding-top: 1%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 100;
 }
 
 .header .left {
@@ -57,6 +62,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 5%;
 
 
@@ -77,7 +83,7 @@ body {
 .tie {
     text-transform: capitalize;
     max-width: 100%;
-    min-height: 30vh;
+    max-height: 30vh;
     background-color: #FBE5D9;
     text-align: center;
     align-content: center;
@@ -175,6 +181,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 5%;
 }
 
@@ -193,12 +200,12 @@ body {
     color: #EB7E40;
     background-color: white;
     border: #EB7E40 solid 1px;
-    transition: 0.4s;
+    transition: 0.7s;
 }
 .foot{
     text-transform: capitalize;
     max-width: 100%;
-    min-height: 30vh;
+    max-height: 30vh;
     background-color: #FBE5D9; 
     display: flex;  
     flex-wrap: wrap; 
@@ -264,10 +271,13 @@ font-size: 1vw;
     }
 
     .yt {
-        width: 60%;
+        width: 50%;
         max-width: 500px;
-        padding: 5%;
+        padding: 4%;
         margin: 5%;
         font-size: small;
+    }
+    .foot{
+        min-height: 10vh;
     }
 }
