@@ -40,6 +40,11 @@ function validateLogin(event) {
    }
    
    document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('login-form');
+    
+    form.addEventListener('submit', function(event) {
+        validateLogin(event);  // Pass the event to validateLogin
+    });
    
        // Event listeners to hide error messages when typing in inputs
        const usernameInput = document.querySelector('input[placeholder="Username"]');
