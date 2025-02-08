@@ -3,82 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="./CSS-files/login.css"> 
-    
-    <link href="Images/icon.webp" rel="icon">
-    <title>LOGIN</title>
+   <link rel="stylesheet" href="./CSS-files/login.css">
+   <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+   <link rel="icon" href="./Images/icon.webp" type="image/png">
+   <title>Login Page</title>
 </head>
 <body>
-    <!--NavBar logo and link-->
-    <nav>
-    <div class="logo">
-       <a href="#"><img src="Images/icon.webp" class="logo-icon"> </a>
-       <span class="nam-web"> iTEAM HUB </span>
-    </div>
+    <div class="container">
 
-    <div>
-
-        <ul class="menu-head" >
-            <li class="menu-iteam1"><a href="index.html">Home Page</a></li>
-        </ul>
-
-    </div>
-    </nav>
-
-    <!--End NavBar logo and link-->
-     
-   
-
-    <!--l0gin form  and img-->
-    <div class="login-form">
-        <!--login box(text and pass)-->
-    <div class="login-box">
-        <!--Header-login-->
-        <div class="login-header">
-          <header>Login</header>
-        </div>
-        <!--End Header-login-->
-
-        <!--UserName-->
-         <div class="input-box">
-            <i class="fas fa-user"></i>
-            <input type="text" class="input-field" placeholder="UserName" autocomplete="off" required>
-         </div>
-        <!--End UserName-->
-
-        <!--Password-->
-        <i class="pass"></i>
-         <div class="input-box">
-            <input type="password" class="input-field" placeholder="password" autocomplete="off" required>
-         </div>
-          <!--End Password-->
-
-          <!--btn sing in-->
-         <div class="input-submit">
-            <button class="submit-dtn" id="submit">Sign in</button>
-            
-         </div>
-         <!--End btn sing in-->
-
-         <div class="forgot">
-            <!--check(remember)-->
-            <section>
-                <input type="checkbox"  id="check"> 
-                <label>Remember me</label>
-                <a href=""><span>Terms and condition</span></a>
-            </section>
-           <!--End check(remember)-->
-            
-         </div>
-       </div>
-
-
-       <!--img-div-->
-       <div class="img-div">
-        <img src="Images/Mobile login-cuate.svg">
+        <div class="login">
+            <div class="nav">
+                <a href="#"><img src="./Images/icon.webp" alt="">iTEAM HUB</a>
+                <a href="/index.html"> Home Page</a>
             </div>
-            <!--End img-div-->
+            <h2>LOGIN</h2>
+            <form id="login-form">
+        
+                <div class="username">
+                    <input type="text" placeholder="Username" required>
+                    <i class="ri-user-3-line"></i>
+                    <p class="hidden">This field is required</p>
+                </div>
+
+                <div class="password">
+                    <input type="password" placeholder="Password" required>
+                    <i class="ri-lock-line"></i>
+                    <p class="hidden">This field is required</p>
+                    <p class="hidden" id="error-message">The Username or Password You Entered isn't correct!</p>
+                </div>
+
+                <button type="submit" onclick="validateLogin(event)">SIGN IN</button>
+                
+
+                <div class="validation">
+                    <div class="left">
+                        <input type="checkbox" name="" id="">
+                        <span>Remember Me</span>
+                    </div>
+                    <span>Terms and Conditions</span>
+                </div>
+            </form>
+        </div>
+
+        <div class="login-image">
+            <img src="./Images/Mobile login-cuate.svg" alt="">
+        </div>
     </div>
-    
+ 
+    <script src="/JS-files/login.js"></script>
 </body>
 </html>
