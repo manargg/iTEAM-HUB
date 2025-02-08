@@ -23,7 +23,7 @@
 
         <div class="user-img">
             <img src="Images/undraw_male-avatar_zkzx.svg" alt="">
-            <span>User123</span>
+            <span class="username"></span>
         </div>
 
       <!-- button  -->
@@ -49,7 +49,7 @@
 
   <!-- top-div -->
    <div class="top-div">
-<h2>Welcome back,User123</h2>
+<h2>Welcome back, <span class="username"></span></h2>
 
 <!-- section button -->
 <div class="section-operations">
@@ -86,5 +86,20 @@
 
 
 </div>
+
+<script>
+    // Retrieve username from localStorage or set a default value
+    const username = localStorage.getItem('username') || '';
+
+    if (username) {
+        document.querySelectorAll('.username').forEach(span => {
+            span.textContent = username;
+        });
+    } else {
+        document.querySelectorAll('.username').forEach(span => {
+            span.textContent = 'Guest';
+        });
+    }
+  </script>
 </body>
 </html>

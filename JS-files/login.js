@@ -30,6 +30,9 @@ function validateLogin(event) {
            const validAdmin = admins.find(admin => admin.username.toLowerCase() === username && admin.password === password);
    
            if (validAdmin) {
+                // Store the username in local storage
+                localStorage.setItem('username', username);
+                
                // If credentials are correct, redirect to the dashboard
                window.location.href = 'admin.html';
            } else {
