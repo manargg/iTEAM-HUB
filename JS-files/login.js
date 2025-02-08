@@ -31,7 +31,7 @@ function validateLogin(event) {
    
            if (validAdmin) {
                // If credentials are correct, redirect to the dashboard
-               window.location.href = 'admin-dashboard.html';
+               window.location.href = 'admin.html';
            } else {
                // If credentials are incorrect, show the error message
                errorMessage.classList.remove('hidden');
