@@ -63,7 +63,7 @@ nav{
     
   }
   .nam-web{
-    color: #EB7E40;
+    color: var(--Gold);
     font-family: "Poppins", serif;
     font-style: normal;
     font-weight: 700;
@@ -77,7 +77,7 @@ nav{
   }
   
   .menu-head a:hover{
-    color:#EB7E40;
+    color: var(--Gold);
   }
 
   /*===============
