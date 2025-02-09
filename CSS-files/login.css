@@ -30,8 +30,6 @@ body{
   justify-content: center;
   height: 100vh;
   font-family: "Poppins", serif;
-  font-style: normal;
-  font-size: 14px;
 }
 
 h1,h2,h3,h4,h5.h6{
@@ -186,6 +184,7 @@ button{
 }
 .validation{
   width: 250px;
+  font-size: 10px;
 }
 .username p, .password p{
   font-size: 10px;
@@ -193,7 +192,8 @@ button{
 
 }
 
-
+/*=================
+===================*/
 
 @media (max-width:649px) {
 
