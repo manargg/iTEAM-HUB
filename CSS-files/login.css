@@ -123,11 +123,12 @@ input::placeholder{
 
 .username p, .password p{
   position: absolute;
-  top: 33px; /* Position it below the input field */
-  left: 10px;
+  top: 35px; 
+  left: 15px;
   color: red;
-  font-size: 15px;
+  font-size: 12px;
 }
+
 .hidden{
   display: none;
 }
@@ -158,10 +159,11 @@ button{
 }
 .validation > span:last-of-type{
   cursor: pointer;
+  
 }
 
-/*=================
-===================*/
+/*========================
+==========================*/
 @media (max-width:950px) {
 h2{
   color: var(--Cyan);
@@ -187,13 +189,18 @@ button{
   font-size: 10px;
 }
 .username p, .password p{
+  top: 30px;
   font-size: 10px;
+  
+}
+#error-message{
+  width: 270px;
+  left: 0px;
+}
 }
 
-}
-
-/*=================
-===================*/
+/*======================
+=======================*/
 
 @media (max-width:649px) {
 
