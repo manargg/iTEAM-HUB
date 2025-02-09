@@ -290,8 +290,6 @@ media large screens
       width: 60%;
   }
   
-
-  
 .intro-img1, .text1{
   width: 30%;
  
@@ -403,7 +401,14 @@ media medium screens
 }
 .text p{
     font-size: 0.9rem;
+
 }
+
+
+.intro-img1  {
+    width: 90%;
+   
+ }
   /*footer section*/
   .footer span{
       font-size: 0.8rem;
@@ -480,9 +485,14 @@ nav span{
   }
   
 
-
+  .intro-img1  {
+    width: 100%;
+   
+ }
 /*footer section*/
 .footer span{
     font-size: 0.6rem;
 }
+
+
 }
