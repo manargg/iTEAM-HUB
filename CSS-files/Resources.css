@@ -313,245 +313,273 @@ a{
 /*=============================
 media large screens
 ============================*/
-@media (max-width:1195px)  {
 
-  /*intro section*/
-  
-  .section1{
-      padding-inline: 50px;
-  }
-  .intro-img, .text{
-     width: 50%;
-  }
-  .text{
-      line-height: 1.5rem;
-  }
-  .text p{
-      font-size: 1rem;
-  }
-  .text h1{
-      font-size: 1.2rem;
-  }
-  
-  /*Resources section*/
-  .container{
-      grid-template-columns: repeat(2,250px);
-  }
-    .card .card-img img{
-      width: 40%;
-      height: 60px;
-  }
-    .card img{
-      height: 50px;
-      width: 60%;
-  }
-  
+@media (max-width:1100px)  {
 
-  
-.intro-img1, .text1{
-  width: 30%;
- 
+/*intro section*/
+
+  .intro-section{
+    padding-inline: 50px;
 }
-.text1{
-   line-height: 1.5rem;
-   text-align: center;
+.intro-img, .intro-text{
+   width: 50%;
 }
-.text1 p{
-   font-size: 1rem;
+.intro-text{
+    line-height: 1.5rem;
 }
+.intro-text p{
+    font-size: 1rem;
+}
+.intro-text h1{
+    font-size: 1.2rem;
+}
+
+/*Resources section*/
+.container{
+    grid-template-columns: repeat(2,250px);
+}
+  .card .card-img img{
+    width: 40%;
+    height: 60px;
+}
+  .card img{
+    height: 50px;
+    width: 60%;
+}
+
+/*platforms section*/
+.platforms-section{
+    margin-left: 50px; 
+}
+
 }
 
 
-/*=============================
-media medium screens
-============================*/
+/*=====================================
+    media query medium screens
+=====================================*/
 
+@media (max-width:750px){
 
-  @media (max-width:750px){
-
-    /*header section*/
-    nav{
-        padding: 10px 50px;
-    }
-    nav span{
-        font-size: 0.9rem;
-    }
-    .logo img{
-        width: 30px;
-    }
-    
-    /*intro section*/
-    .intro-section{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column-reverse;
-        box-sizing: border-box;
-        padding-inline: 50px;
-        margin-block: 100px;
-    }
-    .intro-img {
-       width: 60%;
-      
-    }
-    .intro-text{
-        text-align: center;
-        width: 100%;
-    }
-    .intro-text p{
-        font-size: 0.9rem;
-    }
-    /*headline section*/
-    
-    .headline-context h2{
-        font-size: 1.1rem;
-    }
-    .headline-context p{
-        font-size: 0.9rem;
-    }
-    
-    /*Resources section*/
-    .container{
-        grid-template-columns: repeat(2,220px);
-        font-size: 0.8rem;
-    }
-      .card .card-img img{
-        width: 50%;
-        height:60px;
-      }
-      .card img{
-        height: 60px;
-        width: 100%;
-      }
-     
-      .card button{
-        background-color: var(--Gold);
-        border: none;
-        padding: 8px 25px;
-        border-radius: 5px;
-        color: var(--White);
-        border: 1px solid transparent;
-        transition: all 0.3s ease-in-out 
-      }
-      .card button:hover{
-        color: var(--Gold);
-        background-color: white;
-        border: 1px solid var(--Gold);
-        cursor: pointer;
-      }
-    
-    /*platforms section*/
-    .platforms-section{
-        margin: 100px auto; 
-        padding-inline: 30px;
-    }
-    .platforms-section p{
-        font-size: 0.9rem;
-    }
-    .platforms-section span a{
-        font-size: 0.9rem;
-    }
-    /*channels section*/
-    
-    .channels-section{
-    
-        grid-template-columns: repeat(3, 150px);
-        gap: 10px;
-    }
-    /*footer section*/
-    .footer span{
-        font-size: 0.8rem;
-    }
-    
-    }
-    
-
-  
-/*=============================
-media small screens
-============================*/
-  
-
-@media (max-width:500px) and (min-width:320px) {
-    /*header section*/
+/*header section*/
 nav{
-    padding: 10px 20px;
+    padding: 10px 50px;
 }
 nav span{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
+.logo img{
+    width: 30px;
+}
+.section1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-inline: 50px;
+    margin-block: 100px;
+}
+.section1 .text
+{
+    width: 90%;
+}
+.section1 .intro-img{
+    width: 100%;
+}
+
 /*intro section*/
 .intro-section{
     width: 100%;
     display: flex;
     align-items: center;
-    flex-direction: column-reverse;
+    flex-direction: column;
     box-sizing: border-box;
-    padding-inline: 10px;
-    margin-block: 80px;
+    padding-inline: 50px;
+    margin-block: 100px;
 }
 .intro-img {
-   width: 100%;
+   width: 60%;
   
 }
 .intro-text{
     text-align: center;
     width: 100%;
-
 }
 .intro-text p{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
-
 /*headline section*/
-.headline-context{
-    padding-bottom: 20px;
-}
+
 .headline-context h2{
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 .headline-context p{
-    font-size: 0.8rem;
-    width: 80%;
-    margin: auto;
-    
+    font-size: 0.9rem;
 }
 
 /*Resources section*/
 .container{
-    grid-template-columns: repeat(1,220px);
+    grid-template-columns: repeat(2,220px);
     font-size: 0.8rem;
-    gap: 20px;
-    margin-block: 50px;
 }
-
   .card .card-img img{
     width: 50%;
     height:60px;
   }
   .card img{
     height: 60px;
-    width: 70%;
+    width: 100%;
   }
-  .platforms-section{
-    margin-block: 50px;
-
+ 
+  .card button{
+    background-color: var(--Gold);
+    border: none;
+    padding: 8px 25px;
+    border-radius: 5px;
+    color: var(--White);
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out 
+  }
+  .card button:hover{
+    color: var(--Gold);
+    background-color: white;
+    border: 1px solid var(--Gold);
+    cursor: pointer;
   }
 
+/*platforms section*/
+.platforms-section{
+    margin: 100px auto; 
+    padding-inline: 30px;
+}
+.platforms-section p{
+    font-size: 0.9rem;
+}
+.platforms-section span a{
+    font-size: 0.9rem;
+}
 /*channels section*/
-  .channels-section{
-    grid-template-columns: repeat(2, 130px);
+
+.channels-section{
+
+    grid-template-columns: repeat(3, 150px);
     gap: 10px;
-    margin-block: 50px;
 }
-
-.channels a button{
-    padding: 5px 10px;
-    height: 60px;
-}
-
 /*footer section*/
 .footer span{
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
+
+}
+
+/*=====================================
+    media query small screens
+=====================================*/
+
+@media (max-width: 500px) and (min-width: 320px) {
+    /*header section*/
+    .section1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-inline: 50px;
+        margin-block: 100px;
+    }
+    .section1 .text
+    {
+        width: 90%;
+    }
+    nav {
+        padding: 10px 20px;
+    }
+    nav span {
+        font-size: 0.7rem;
+    }
+    
+    /*intro section*/
+    .section1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-inline: 50px;
+        margin-block: 100px;
+    }
+    .section1 .text
+    {
+        width: 90%;
+    }
+    .intro-section {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-inline: 10px;
+        margin-block: 80px;
+    }
+    .intro-img {
+       width: 100%;
+    }
+    .intro-text {
+        text-align: center;
+        width: 100%;
+    }
+    .intro-text p {
+        font-size: 0.8rem;
+    }
+    
+    /*headline section*/
+    .headline-context {
+        padding-bottom: 20px;
+    }
+    .headline-context h2 {
+        font-size: 1rem;
+    }
+    .headline-context p {
+        font-size: 0.8rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    /*Resources section*/
+    .container {
+        grid-template-columns: repeat(1, 220px);
+        font-size: 0.8rem;
+        gap: 20px;
+        margin-block: 50px;
+    }
+
+    .card .card-img img {
+        width: 50%;
+        height: 60px;
+    }
+    .card img {
+        height: 60px;
+        width: 70%;
+    }
+    .platforms-section {
+        margin-block: 50px;
+    }
+
+    /*channels section*/
+    .channels-section {
+        grid-template-columns: repeat(2, 130px);
+        gap: 10px;
+        margin-block: 50px;
+    }
+
+    .channels a button {
+        padding: 5px 10px;
+        height: 60px;
+    }
+
+    /*footer section*/
+    .footer span {
+        font-size: 0.6rem;
+    }
 }
