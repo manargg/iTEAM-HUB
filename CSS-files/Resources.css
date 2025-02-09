@@ -200,15 +200,19 @@ a{
 .platforms {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
 }
 
 .pp {
     background-color: #fff;
-    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+   align-items: center;
     border-radius: 8px;
     padding: 15px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
 }
 
 .pp a {
@@ -492,7 +496,7 @@ nav span{
         width: 100%;
         display: flex;
         align-items: center;
-        flex-direction: column-reverse;
+     flex-direction: column-reverse;
         box-sizing: border-box;
         padding-inline: 50px;
         margin-block: 100px;
