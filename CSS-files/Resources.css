@@ -203,15 +203,18 @@ a{
     justify-content: center;
     align-items: center;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .pp {
     background-color: #fff;
     display: flex;
-    flex-direction: row;
-   align-items: center;
+    justify-content: space-between; 
+    align-items:baseline; 
     border-radius: 8px;
     padding: 15px;
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; 
     
 }
 
@@ -228,6 +231,8 @@ a{
 .pp p {
     margin-top: 10px;
     color: #666;
+    flex: 1;
+    margin-left: 10px;
 }
 
 
@@ -295,6 +300,9 @@ a{
     border: 1px solid var(--Gold);
     cursor: pointer;
 }
+footer {
+    width: 100%;
+}
 .footer{
     width: 100%;
     background-color: var(--Desert-Rose);
@@ -308,7 +316,6 @@ a{
 .footer span:last-child:hover{
     cursor: pointer;
 }
-
 /*=====================
     End footer section
 ========================*/
