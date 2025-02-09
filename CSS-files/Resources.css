@@ -318,7 +318,7 @@ media large screens
 
 /*intro section*/
 
-.intro-section{
+  .intro-section{
     padding-inline: 50px;
 }
 .intro-img, .intro-text{
@@ -370,6 +370,22 @@ nav span{
 }
 .logo img{
     width: 30px;
+}
+.section1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-inline: 50px;
+    margin-block: 100px;
+}
+.section1 .text
+{
+    width: 90%;
+}
+.section1 .intro-img{
+    width: 100%;
 }
 
 /*intro section*/
@@ -471,6 +487,19 @@ nav span{
     }
     
     /*intro section*/
+    .section1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding-inline: 50px;
+        margin-block: 100px;
+    }
+    .section1 .text
+    {
+        width: 90%;
+    }
     .intro-section {
         width: 100%;
         display: flex;
