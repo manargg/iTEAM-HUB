@@ -1,218 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./CSS-files/Resources.css">
-  <title>Resources</title>
+  <link rel="stylesheet" href="CSS-files/Resources.css">
+  <link href="Images/icon.webp" rel="icon">
+  <title>Resources Page</title>
 </head>
 
 <body>
-  <!--header-->
-  <div class="header">
-    <div class="left"><a href="index.html"><img src="Images/icon.webp" alt=""></a> iTEAM-HUB</div>
-    <div class="right"><a href="index.html">Home page</a></div>
-  </div>
   
-  <!--main div-->
-  <div class="main">
-    <!--text-->
-    <div class="intro">
-      <p>helpful Resources</p>
-      <h1>essential tools & Resources</h1>
-      <p> these Resources offer valuable Support for web develo And designers , helping them efficiently create and
-        manage projects while enhancing creativty and user experience .
-        you will also find recomended youtube channels that provide experts insights and tutorials to elevate your
-        skills and knowledge</p>
-    </div>
-    <!--img-->
-    <div class="img"><img src="Images/Asset selection-rafiki.svg" alt=""></div>
+  <header>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="./Images/icon.webp" alt="">iTEAM HUB</a>
+        </div>
+
+        <a href="index.html"><span>Home Page</span></a>
+    </nav>
+</header>
+
+
+ <!--section1-->
+
+ <section class="section1">
+  <div class="text">
+     <p>Helpful Resources</p>
+     <h1>Essential Tools & Resources</h1>
+     <p>These resources offer valuable support for problem solvers,
+       assisting them in efficiently tackling challenges and 
+       improving their skills. You'll also find recommended YouTube 
+       channels that provide expert tutorials and insights to enhance 
+       your problem-solving 
+       abilities and knowledge.</p>
   </div>
-  <!--tie div-->
-  <div class="tie">
-    <h1> top recomended Resources</h1>
-    <p>these are some of our favrite tools and Resources for web developers</p>
+  <div class="intro-img">
+      <img src="Images/Asset selection-rafiki.svg" alt="">
   </div>
+</section>
+<!--End section1-->
 
-  <!---------------cards section--------------------------------->
-  <div class="cards1">
-    <!--mdn-->
-    <div class="mdn">
-      <img src="Images/MDN_Web_Docs_logo.svg.png" alt="">
-      <p>comprehesive and well-documented Resources for HTML , CSS,Java script , and other web technologies</p>
-      <a class="btn" href="https://developer.mozilla.org/en-US/" target="_blank">visit site</a>
 
-    </div>
-    <!--w3school-->
-    <div class="mdn">
-      <img src="Images/77673807.png" alt="">
-      <p>beginner friendly tutorials and references for web development</p>
-      <a class="btn" href="https://www.w3schools.com/" target="_blank">visit site</a>
+<!--section2-->
 
-    </div>
-    <!--free code camp-->
-    <div class="mdn">
-      <img src="Images/fcc_secondary_large.svg" alt="">
-      <p>interactive lessons and real-world projects to help you master web development skills</p>
-      <a class="btn" href="https://www.freecodecamp.org/" target="_blank">visit site</a>
-
-    </div>
+<section class="section2">
+  <div class="headline">
+      <h2>Top Recommended Resources</h2>
+      <p>Explorw Our Favorit Websites and Resouces for Problem Solving</p>
   </div>
-  <!---------------cards2 section--------------------------------->
-  <div class="cards1">
-    <!--geeks for geeks-->
-    <div class="mdn">
-      <img src="Images/176603124-5032abab-5d0c-4c97-95ad-20bdd4c0ab91.png" alt="">
-      <p>detailed articles , coding challenges, and tutorials on web development</p>
-      <a class="btn" href="https://www.geeksforgeeks.org/" target="_blank">visit site</a>
+</section>
 
-    </div>
-    <!--stackoverflow-->
-    <div class="mdn">
-      <img src="Images/c87540e64ca39f5ea41fe57f1986d6e6.png" alt="">
-      <p>a vast q&a community where developers  solve coding problems and share insights</p>
-      <a class="btn" href="https://stackoverflow.com/" target="_blank">visit site</a>
+<!--End section2-->
 
+
+<!--Resources section-->
+<section class="resources">
+  <div class="container">
+
+      <div class="card">
+          <div class="card-img">
+              <img src="Images/MDN_Web_Docs_logo.svg.png" alt="">
+              
+          </div>
+          <p>Comprehensive and well-documented resources for HTML, CSS, JavaScript, and other web technologies</p>
+          <a href="https://developer.mozilla.org/en-US/" target="_blank"><button>vist Site</button></a>
+      </div>
+
+      <div class="card">
+        
+          <img src="Images/77673807.png" alt="">
+        
+          <p>Beginner-friendly tutorials and references for web development languages and frameworks.</p>
+          <a href="https://www.w3schools.com/" target="_blank"><button>vist Site</button></a>
+       
+      </div>
+
+      <div class="card">
+        
+          <img src="Images/fcc_secondary_large.svg" alt="">
+      
+          <p>Interactive lessons and real-world projects to help you master web development skills.</p>
+          <a href="https://www.freecodecamp.org/" target="_blank"><button>vist Site</button></a>
+      </div>
+
+      <div class="card" >
+        
+          <img src="Images/176603124-5032abab-5d0c-4c97-95ad-20bdd4c0ab91.png" alt="">
+        
+          <p>Detailed articles, coding challenges, and tutorials on web development and programming.</p>
+          <a href="https://pnext3.geeksforgeeks.org/courses" target="_blank"><button>vist Site</button></a>
+      </div>
+
+      <div class="card">
+        
+        <img src="Images/c87540e64ca39f5ea41fe57f1986d6e6.png" alt="">
+      
+        <p>A vast Q&A community where developers solve coding problems and share insights.</p>
+        <a href="https://stackoverflow.co/" target="_blank"><button>vist Site</button></a>
     </div>
-    <!--vs code-->
-    <div class="mdn">
+
+    <div class="card">
+      
       <img src="Images/pngegg.png" alt="">
-      <p>a lightweight , powerful code editor with an extensive extension library </p>
-      <a class="btn" href="https://code.visualstudio.com/" target="_blank">visit site</a>
-
-    </div>
-  </div>
-  <!---------------cards3 section--------------------------------->
-  <div class="cards1">
-    <!--github-->
-    <div class="mdn">
-      <img src="Images/pngwing.com.png" alt="">
-      <p>version control and collaboration plat form for managing and sharing code </p>
-      <a class="btn" href="https://github.com/" target="_blank">visit site</a>
-
-    </div>
-    <!--codepen-->
-    <div class="mdn">
-      <img src="Images/CodePen_Logo.svg.png" alt="">
-      <p>an online playground for testing and sharing HTML,CSS,JS snippets</p>
-      <a class="btn" href="https://codepen.io/" target="_blank">visit site</a>
-
-    </div>
-
-  </div>
-  <!-------design resorces----------->
-  <div class="tie">
-    <h1>design Resources</h1>
-  </div>
-  <!---------------cards4 section--------------------------------->
-  <div class="cards1">
-    <!--figma-->
-    <div class="mdn">
-      <img src="Images/Figma.png" alt="">
-      <p>cloud based design tool for UI/UX design and collaboration</p>
-      <a class="btn" href="https://www.figma.com/" target="_blank">visit site</a>
-
-    </div>
-    <!--xd-->
-    <div class="mdn">
-      <img src="Images/adobe-xd-svgrepo-com.svg" alt="">
-      <p>tool for prototyping user interfaces and experience</p>
-      <a class="btn" href="https://adobe-xd.en.softonic.com/" target="_blank">visit site</a>
-
-    </div>
-    <!--canva-->
-    <div class="mdn">
-      <img src="Images/canva.png" alt="">
-      <p>easy to use tool for creating visually appealing graphics</p>
-      <a class="btn" href="https://www.canva.com/" target="_blank">visit site</a>
-
-    </div>
-  </div>
-  <!---------------cards5 section--------------------------------->
-  <div class="cards1">
-    <!--unsplash-->
-    <div class="mdn">
-      <img src="Images/unsplash.png" alt="">
-      <p>high resolution , royalty free Images for design projects</p>
-      <a class="btn" href="https://unsplash.com/" target="_blank">visit site</a>
-
-    </div>
-    <!--google fonts-->
-    <div class="mdn">
-      <img src="Images/Google_Fonts_logo.svg.png" alt="">
-      <p>free fonts for web and graphic design</p>
-      <a class="btn" href="https://fonts.google.com/" target="_blank">visit site</a>
-
-    </div>
-
+    
+      <p>A lightweight, powerful code editor with an extensive extension library.</p>
+      <a href="https://code.visualstudio.com/" target="_blank"><button>vist Site</button></a>
   </div>
 
+  <!---->
+  <div class="card">
+      
+    <img src="Images/pngwing.com.png" alt="">
+  
+    <p>Version control and collaboration platform for managing and sharing code.</p>
+    <a href="https://github.com/" target="_blank"><button>vist Site</button></a>
+</div>
+<div class="card">
+      
+  <img src="Images/CodePen_Logo.svg.png" alt="">
 
-  <!----learing platform-->
-  <div class="tie">
-    <h1>learing & productivity platforms</h1>
-    <p> these are some of our learing platforms</p>
+  <p>An online playground for testing and sharing HTML, CSS, and JavaScript snippets.</p>
+  <a href="https://codepen.io/" target="_blank"><button>vist Site</button></a>
+</div>
   </div>
+</section>
+<!--End Resources section-->
+<!--design resouurces-->
+<section class="section2">
+  <div class="headline">
+      <h2>Design Resouces</h2>
+      
+  </div>
+</section>
 
-  <!--platforms-->
-  <div class="platforms">
-    <div>
-     <div class="pp"> <a href="https://www.coursera.org/">Coursera: </a>
-      <p>university-led courses on development and design</p></div>
+<!------------------------------------------------------------------------------->
+<!-- section3 -->
+<!--Resources section-->
+<section class="resources">
+  <div class="container">
 
-      <div class="pp"><a href="https://www.udemy.com/">udemy :</a>
-        <p>affordable courses on development and design by experts</p></div>
+      <div class="card">
+          <div class="card-img">
+              <img src="Images/Figma.png" alt="">
+              
+          </div>
+          <p>Cloud-based design tool for UI/UX design and collaboration.</p>
+          <a href="https://www.figma.com/" target="_blank"><button>vist Site</button></a>
+      </div>
 
-     <div class="pp"> <a href="">codecademy:</a>
-      <p>interactive coding lessons</p></div>
+      <div class="card">
+        
+          <img src="Images/adobe-xd-svgrepo-com.svg" alt="">
+        
+          <p>Tool for prototyping user interfaces and experiences.</p>
+          <a href="https://www.adobe.com/products/xd" target="_blank"><button>vist Site</button></a>
+       
+      </div>
 
-      <div class="pp"><a href="">notion:</a>
-        <p>All-in-one tool for notes , project management,and task tracking </p></div>
+      <div class="card">
+        
+          <img src="Images/canva.png" alt="">
+      
+          <p>Easy-to-use tool for creating visually appealing graphics.</p>
+          <a href="https://www.canva.com/" target="_blank"><button>vist Site</button></a>
+      </div>
 
-     <div class="pp"> <a href="">sololearn :</a>
-      <p> an interactive platform for learing programming languages and web development basics</p></div>
+      <div class="card" >
+        
+          <img src="Images/unsplash.png" alt="">
+        
+          <p>High-resolution, royalty-free images for design projects.</p>
+          <a href="https://unsplash.com/" target="_blank"><button>vist Site</button></a>
+      </div>
+
+      <div class="card">
+        
+        <img src="Images/Google_Fonts_logo.svg.png" alt="">
+      
+        <p>Free fonts for web and graphic design.</p>
+        <a href="https://fonts.google.com/" target="_blank"><button>vist Site</button></a>
     </div>
 
-  </div>
-  <!--yt channels-->
-  <div class="tie">
-    <h1>youtube channels</h1>
-    <p>these are some of the best english and arabic youtube channels to help you in development and design</p>
-  </div>
-  <!--link div1-->
-  <div class="ytlinks">
-    <a class="yt" href="https://www.youtube.com/@slayingthedragon">slying the dragon</a>
-    <a class="yt" href="https://www.youtube.com/@javascriptmastery">javascript mastery</a>
-    <a class="yt" href="https://www.youtube.com/@NetNinja">net ninja</a>
-    <a class="yt" href="https://www.youtube.com/@CodinginPublic">coding in public</a>
-  </div>
-  <!--link div2-->
-  <div class="ytlinks">
-    <a class="yt" href="https://www.youtube.com/@BroCodez">brocode</a>
-    <a class="yt" href="https://www.youtube.com/@Rakwan">code rk</a>
-    <a class="yt" href="https://www.youtube.com/@ElzeroWebSchool">elzero web School</a>
-    <a class="yt" href="https://www.youtube.com/@elrayek">courses 4 arab</a>
-  </div>
-  <!--link div3-->
-  <div class="ytlinks">
-    <a class="yt" href="https://www.youtube.com/@ProgrammingAdvices">programming advices</a>
-    <a class="yt" href="https://www.youtube.com/@Y7IAGraphicDesigner">Y7IA graphic designer</a>
-    <a class="yt" href="https://www.youtube.com/@CodingLabYT">coding lab</a>
-    <a class="yt" href="https://www.youtube.com/@AbdelrahmanGamal">abdelirahman gamal</a>
-  </div>
-  <!--link div4-->
-  <div class="ytlinks">
-    <a class="yt" href="https://www.youtube.com/@Mizko">mizko the designer</a>
-    <a class="yt" href="https://www.youtube.com/@AdobeCreativeCloud">adobe creative cloud</a>
+
+
 
   </div>
-  <!--footer-->
-  <footer class="foot">
-    <p>ITEAM | zuj </p>
-    <a href="">terms and conditions</a>
-  </footer>
+</section>
+<!-- End section3 -->
+
+<!--footer section-->
+<footer>
+  <div class="footer">
+      <span>© iTEAM|ZUJ</span>
+      <span>Terms and Conditions</span>
+  </div>
+</footer>
+<!-- End footer section -->
 </body>
 
 </html>
