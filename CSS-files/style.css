@@ -379,6 +379,11 @@ footer{
   .paragraph{
     font-size: 18px;
   }
+  .t-papag{
+   
+    width: 40%;
+    
+  }
 
   .img{
     width:450px ;
@@ -427,6 +432,12 @@ footer{
     margin-top: 100px;
     color: #106379;
   }
+  .t-papag{
+   
+    width: 80%;
+    
+  }
+
   .title{
    font-size: 1.3em;
   }
