@@ -102,6 +102,12 @@ button
     font-size: 15px;
 }
 
+.div-button button a{
+    
+    color: var(--Light-Gray);
+    
+}
+
 .div-button button:hover{
     background-color: #094a5c;
     border: none;
