@@ -299,6 +299,7 @@ body{
     align-items: center;
     transition: transform 0.5s ease-in-out;
     box-sizing: border-box;
+    padding-block: 50px;
   }
   .leftside-nav.active{
     transform: translateX(100%);
@@ -346,7 +347,7 @@ body{
   }
   
 .leftside-nav span{
-  padding-bottom: 20px;
+  
   color: var(--Light-Gray);
   }
 /*=============*/
