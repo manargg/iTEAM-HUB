@@ -332,16 +332,16 @@ media large screens
   .intro-section{
     padding-inline: 50px;
 }
-.intro-img, .intro-text{
+.intro-img, .text{
    width: 50%;
 }
-.intro-text{
+.text{
     line-height: 1.5rem;
 }
-.intro-text p{
+.text p{
     font-size: 1rem;
 }
-.intro-text h1{
+.text h1{
     font-size: 1.2rem;
 }
 
@@ -391,41 +391,33 @@ nav span{
     padding-inline: 50px;
     margin-block: 100px;
 }
-.section1 .text
-{
-    width: 90%;
-}
+
 .section1 .intro-img{
     width: 100%;
 }
-
-/*intro section*/
-.intro-section{
+.text{
+    text-align: center;
     width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column-reverse;
-    box-sizing: border-box;
-    padding-inline: 50px;
-    margin-block: 100px;
+}
+.text h1{
+    text-align: center;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.text p{
+    font-size: 0.8rem;
 }
 .intro-img {
    width: 60%;
   
 }
-.intro-text{
-    text-align: center;
-    width: 100%;
-}
-.intro-text p{
-    font-size: 0.9rem;
-}
-/*headline section*/
 
-.headline-context h2{
+
+.headline h2{
     font-size: 1.1rem;
 }
-.headline-context p{
+.headline p{
     font-size: 0.9rem;
 }
 
@@ -508,39 +500,37 @@ nav span{
         padding-inline: 50px;
         margin-block: 100px;
     }
-    .section1 .text
-    {
-        width: 90%;
-    }
+    
 
-    .intro-section {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        box-sizing: border-box;
-        padding-inline: 10px;
-        margin-block: 80px;
-    }
-    .intro-img {
-       width: 100%;
-    }
-    .intro-text {
+
+    .text{
         text-align: center;
         width: 100%;
     }
-    .intro-text p {
+    .text h1{
+        text-align: center;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+   
+    .text p{
         font-size: 0.8rem;
+       
+    }
+    
+    .intro-img {
+       width: 100%;
     }
     
     /*headline section*/
-    .headline-context {
+    .headline {
         padding-bottom: 20px;
     }
-    .headline-context h2 {
+    .headline h2 {
         font-size: 1rem;
     }
-    .headline-context p {
+    .headline p {
         font-size: 0.8rem;
         width: 80%;
         margin: auto;
