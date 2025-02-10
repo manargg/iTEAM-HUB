@@ -26,7 +26,7 @@ body{
     margin: 0;
     box-sizing: border-box;
     height: 100vh;
-   overflow: hidden;
+    overflow: hidden;
 }
 
  a{
@@ -192,6 +192,9 @@ body{
     background-color: var(--White);
     color: var(--Gold);
 }
+
+
+
 /*=========================
 =========================*/
 @media (max-width:1300px) and (min-width:1030px) {
@@ -205,15 +208,17 @@ body{
     margin-block: 100px;
     padding-top: 200px; 
     padding-left: 200px; 
-  
 }
+
 }
 /*=========================
 =========================*/
 @media (max-width:1029px) and (min-width:780px){
     .edit-section {
         grid-template-columns: repeat(2, 200px);
+        margin-top: 10px;
     }
+   
 }
 /*=========================
 =========================*/
@@ -242,6 +247,9 @@ body{
 /*=========================
 =========================*/
 @media (max-width:520px) and (min-width:320px) {
+    body{
+        overflow: auto;
+    }
    
 .intro{
     background-color: var(--Cyan);
@@ -249,11 +257,15 @@ body{
     align-items: center;
     justify-content: space-around;
     padding-block: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--Gold);
 }
 .intro i{
-font-size: 25px;
-color: var(--White);
-}
+    font-size: 25px;
+    color: var(--White);
+    }
 
 .user-img img{
     width: 50px;
@@ -284,8 +296,6 @@ color: var(--White);
     justify-content: space-between;
     align-items: center;
     transition: transform 0.5s ease-in-out  ;
-    box-sizing: border-box;
-    
   }
   .leftside-nav.active{
     transform: translateX(100%);
@@ -332,8 +342,7 @@ color: var(--White);
     text-underline-offset: 4px;
   }
   
-  .leftside-nav span
-  {
+.leftside-nav span{
   padding-bottom: 10px;
   color: var(--Light-Gray);
   }
@@ -342,18 +351,15 @@ color: var(--White);
     display: none;
 
 }
-body{
-    overflow: scroll;
-}
+
 .edit-section {
     grid-template-columns: repeat(1, 200px);
     justify-items: center;
     padding-top: 0px; 
     padding-left: 0; 
     padding-bottom: 20px;
-    margin-block: 50px;
+    margin-block: 150px;
     height: 100vh; 
-   
 }
  
     
