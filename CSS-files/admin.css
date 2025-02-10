@@ -18,186 +18,343 @@ h1,h2,h3,h4,h5.h6{
     font-style: normal;
   }
   
-  body{
+body{
     font-family: "Poppins", serif;
     font-style: normal;
     font-size: 14px;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
-
-.container{
-    display:flex ;
+    height: 100vh;
+   overflow: hidden;
 }
-/*=======================
-left side
-=========================*/
-.left-side{
-width: 300px;
-background-color: var(--Cyan);
-height: 960px;}
 
-/*======================
-logo
-=======================*/
-nav{
-    display: flex;  
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 80px;
-    box-sizing: border-box;
-}
-a{
+ a{
     text-decoration: none;
-  }
-.logo a{
+ }
+ ul{
+    list-style: none;
+    padding: 0;
+ }
+ /*=====================
+    left section
+========================*/
+ .left-section{
+    background-color: var(--Cyan);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    top: 0;
+    padding-block: 20px;
+    box-sizing: border-box;
+ }
+ .left-section a{
     display: flex;
     align-items: center;
-    column-gap: 5px;  
+    column-gap: 5px;
     color: var(--Gold);
-}
-.logo img{
+ }
+ .left-section a img{
     width: 40px;
-}
+ }
 
-/*================
-user-img
-=================*/
-.user-img{
-margin: 50px 100px;
-
-}
-.user-img img{
+ .user-img img{
     width: 100px;
-    background-color: var(--Light-Gray);
+    background-color: var(--White);
     border-radius: 60px;
-    margin-bottom: 40px;
-
-}
-
-.user-img span{
-    color: var(--Light-Gray);
-    margin: 20px;
-}
-
-/*================
-button
-=================*/
-.div-button{
-    width: 200px;
-    margin: 50px 50px;
-}
-.div-button button{
+    border: none;
+    
+ }
+ .user-img{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+    color: var(--White);
+ }
+.nav-links ul {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 200px;
-    border-radius: 20px;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: var(--Cyan);
-    color: var(--Light-Gray);
-    border: none;
-    font-weight: 700;
-    font-size: 15px;
+    row-gap: 20px;
+    color: var(--White);
+    width: 100%;
 }
+.nav-links ul li{
+    padding: 10px 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    width: auto;
+    transition: all 0.3s ease-in-out;
 
-.div-button button a{
-    
-    color: var(--Light-Gray);
-    
 }
-
-.div-button button:hover{
+.nav-links ul li:hover{
     background-color: #094a5c;
-    border: none;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
- i{
-    color: var(--Light-Gray);
-    position: relative;
-    top:50px;
-    left: 30px;
+.nav-links ul li i{
     font-size: 20px;
 }
 
-
-
-/*===============
-footer
-===============*/
-.footer{
-    width: 200px;
-    margin: 150px 100px;
-    color: var(--Light-Gray);
+.left-section span{
+    color: var(--White);
 }
 
+/*=====================
+    top section
+========================*/
 
-/*==============
-top-div
-===============*/
-.top-div{
-width: 100%;
-height:200px ;
-background-color:rgb(224, 219, 219);
-
-}
-
-.top-div h2{
-    margin:80px 100px;
-}
-
-/*============
-section-operations
-================*/
-.section-operations{
-    width: 100%;
-    height: 860;
-   
-}
-
-.section-operations button{
-    margin: 100px;
-    width: 250px;
-    height: 100px;
-    padding: 30px;
-    border-radius: 30px;
-    background-color: var(--Cyan);
-    border: none;
-}
-
-.section-operations button span{
-    padding: 20px;
-    color: var(--Light-Gray);
-    font-weight: 700;
+.top-section {
+    background-color: var(--Light-Gray);
+    position: fixed;
+    left: 250px;
+    top: 0; 
+    width: calc(100% - 250px); /* Take the remaining width */
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    box-sizing: border-box;
     
 }
-
-.section-operations button p{
-font-size: 10px;
-color: var(--Gold);
-margin-top: 15px;
-
+.top-section h2{
+    margin-left: 100px;
 }
-.section-operations button i{
-
-position: relative;
-top: 29px;
-left: 5px;
-font-size: 13px;
-color: var(--Gold);
+.intro{
+    display: none;
 }
-.section-operations button:hover{
+
+/*=====================
+    edit section
+========================*/
+
+.edit-section {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    align-items: center;
+    justify-content: center;
+    gap: 20px 50px;
+    margin-block: 100px;
+    padding-top: 200px; 
+    padding-left: 200px; 
+}
+
+
+.card  {
+    background-color: var(--Cyan);
+    border: 1px solid transparent;
+    padding: 15px;
+    border-radius: 50px;
+    color: var(--White);
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+}
+.gold-card{
     background-color: var(--Gold);
-    border: none;
+    border: 1px solid var(--Gold);
+    padding: 15px;
+    border-radius: 50px;
+    color: var(--White);
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+.gold-card p{
+    font-size: 12px;
+}
+.card p{
+    color: var(--Gold);
+    font-size: 12px;
 }
 
-.section-operations button:hover p{
-    font-size: 10px;
-    color: var(--Light-Gray);
+/* Button hover effect */
+.card:hover {
+    color: var(--Gold);
+    background-color: white;
+    border: 1px solid var(--Gold);
+}
+.gold-card:hover{
+    background-color: var(--White);
+    color: var(--Gold);
+}
+/*=========================
+=========================*/
+@media (max-width:1300px) and (min-width:1030px) {
+/*edit section*/
+.edit-section {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    align-items: center;
+    justify-content: center;
+    gap: 20px 50px;
+    margin-block: 100px;
+    padding-top: 200px; 
+    padding-left: 200px; 
+  
+}
+}
+/*=========================
+=========================*/
+@media (max-width:1029px) and (min-width:780px){
+    .edit-section {
+        grid-template-columns: repeat(2, 200px);
+    }
+}
+/*=========================
+=========================*/
+@media (max-width: 779px) and (min-width:520px){
+    body {
+        overflow: auto; 
+    }
+    .top-section {
+      
+        z-index: 10;
+    }
+    .top-section h2{
+        margin-left: 20px;
+    }
+    .edit-section {
+        grid-template-columns: repeat(1, 200px);
+        padding-top: 80px; 
+        padding-left: 220px; 
+        padding-bottom: 20px;
+        height: 100vh; /* Ensure it takes the full viewport height */
+        overflow-y: auto; /* Allow vertical scrolling */
+        box-sizing: border-box; /* Prevent padding from affecting layout */
+        z-index: -10;
+    }
+}
+/*=========================
+=========================*/
+@media (max-width:520px) and (min-width:320px) {
+   
+.intro{
+    background-color: var(--Cyan);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-block: 15px;
+}
+.intro i{
+font-size: 25px;
+color: var(--White);
+}
+
+.user-img img{
+    width: 50px;
+    background-color: var(--White);
+    border-radius: 60px;
     border: none;
-    }
-    .section-operations button:hover i{
-        color: var(--Light-Gray);
-        border: none;
-    }
+    
+ }
+ .user-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    color: var(--White);
+ }
+
+/*================nav leftside==================*/
+.leftside-nav{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    background-color: var(--Cyan);
+    height: 100vh;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.5s ease-in-out  ;
+    box-sizing: border-box;
+    
+  }
+  .leftside-nav.active{
+    transform: translateX(100%);
+  }
+  
+  .leftside-nav .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 100px;
+    
+  }
+  .logo a{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    color: var(--Gold);
+  }
+  .logo a img{
+    width:50px;
+  }
+  .logo i{
+    color: var(--White);
+    font-size: 25px;
+  }
+  .logo i:hover{
+    cursor: pointer;
+  }
+  .nav-links{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+    row-gap: 50px;
+    margin-top: -150px;
+  }
+  .nav-links a{
+    color: var(--White);
+  }
+
+  .nav-links a:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  
+  .leftside-nav span
+  {
+  padding-bottom: 10px;
+  color: var(--Light-Gray);
+  }
+/*=============*/
+.left-section, .top-section{
+    display: none;
+
+}
+body{
+    overflow: scroll;
+}
+.edit-section {
+    grid-template-columns: repeat(1, 200px);
+    justify-items: center;
+    padding-top: 0px; 
+    padding-left: 0; 
+    padding-bottom: 20px;
+    margin-block: 50px;
+    height: 100vh; 
+   
+}
+ 
+    
+}
