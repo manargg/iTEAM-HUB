@@ -6,100 +6,94 @@
     <link rel="stylesheet"  href="./CSS-files/admin.css"> 
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
     <link href="Images/icon.webp" rel="icon">
-    <title>Admin</title>
+    <title>Admin Dashboard</title>
 </head>
 <body>
-    <div class="container">
-    <!-- left side -->
-    <div class="left-side">
-        <!-- logo -->
-        <nav>
-            <div class="logo">
-                <a href="#"><img src="./Images/icon.webp" alt="">iTEAM HUB</a>
-            </div>
-        </nav>
-
-        <!-- user img -->
-
-        <div class="user-img">
-            <img src="Images/undraw_male-avatar_zkzx.svg" alt="">
-            <span class="username"></span>
-        </div>
-
-      <!-- button  -->
-        <div class="div-button">
-
-            <i class="ri-home-4-line"></i>
-            <button><a href="index.html">Home</a></button>
-            <i class="ri-group-line"></i>
-            <button><a href="#sections">Sections</a></button>
-            <i class="ri-group-line"></i>
-            <button><a href="index.html">User</a></button>
-            <i class="ri-settings-3-line"></i>
-            <button><a href="index.html">Account</a></button>
-            
-            
-        </div>
-<!-- left-footer -->
-        <div class="footer">
-            <span>© iTEAM|ZUJ</span>
-            
-        </div>
-  </div>
-
-  <!-- top-div -->
-   <div class="top-div">
-<h2>Welcome back, <span class="username"></span></h2>
-
-<!-- section button -->
-<div class="section-operations">
-    <button>
-        <span>Add new Section</span>
-        <i class="ri-arrow-right-line"></i>
-        <p>Add new section to the website</p>
-    </button>
-    <button>
-        <span>Edit Section</span>
-        <i class="ri-arrow-right-line"></i>
-        <p>Edit an exiting section</p>
-    </button>
-    <button>
-        <span>Add Resources</span>
-        <i class="ri-arrow-right-line"></i>
-        <p>Add a new resource to section</p>
-    </button>
-    <button>
-        <span>Edit Resources</span>
-        <i class="ri-arrow-right-line"></i>
-        <p>Edit an exiting resources</p>
-    </button>
-    <button>
-        <span>View Section</span>
-        <i class="ri-arrow-right-line"></i>
-        <p>List of Section</p>
-    </button>
     
+<!--left section-->
+<section class="left-section">
+    <a href=""><img src="./Images/icon.webp" alt="">iTEAM HUB</a>
+    <div class="user-img">
+        <img src="./Images/undraw_male-avatar_zkzx.svg" alt="" class="user">
+        <span class="username"></span>
+    </div>
+    <div class="nav-links">
+        <ul>
+            <li><i class="ri-home-4-line"></i> Home</li>
+            <li><i class="ri-file-list-line"></i> Sections</li>
+            <li><i class="ri-group-line"></i> Users</li>
+            <li><i class="ri-settings-2-line"></i> Account</li>
+        </ul>
+    </div>
+    <span> © iTEAM|ZUJ</span>
+</section>
 
-   </div>
+<!--top section-->
+<section class="top-section">
+    <h2>Welcom back, <span class="username"></span></h2>
+</section>
 
-   </div>
+<!--into section-->
+<section class="intro">
+    <div class="user-img">
+        <img src="./Images/undraw_male-avatar_zkzx.svg" alt="" class="user">
+        <span class="username"></span>
+    </div>
+
+    <div class="menu-purger" id="menu-purger">
+        <i class="ri-align-justify"></i>
+    </div>
+
+    <div class="leftside-nav" id="leftside-nav">
+        <div class="logo">
+            <a href="#"><img src="Images/icon.webp" class="logo-icon">iTEAM HUB </a>
+            <i class="ri-close-large-line"></i> 
+        </div>
+
+        <div class="nav-links" id="links">
+            <a href="#"><i class="ri-home-4-line"></i> Home</a>
+            <a href="#"><i class="ri-file-list-line"></i> Sections</a>
+            <a href="#"><i class="ri-group-line"></i> Users</a>
+            <a href="#"><i class="ri-settings-2-line"></i> Account</a>
+        </div>
+        <span>© iTEAM|ZUJ</span>
+    </div>
+</section>
 
 
-</div>
 
-<script>
-    // Retrieve username from localStorage or set a default value
-    const username = localStorage.getItem('username') || '';
 
-    if (username) {
-        document.querySelectorAll('.username').forEach(span => {
-            span.textContent = username;
-        });
-    } else {
-        document.querySelectorAll('.username').forEach(span => {
-            span.textContent = 'Guest';
-        });
-    }
-  </script>
+  
+  <!--edit section-->
+<section class="edit-section">
+
+    <div class="card">
+        <h3>Add new Section</h3>
+        <p>Add new section <i class="ri-arrow-right-line"></i></p>
+    </div>
+
+    <div class="card">
+        <h3>Edit Section</h3>
+        <p>Edit an existing section <i class="ri-arrow-right-line"></i></p>
+    </div>
+
+    <div class="card">
+        <h3>Add Resources</h3>
+        <p>Add a new resource to section <i class="ri-arrow-right-line"></i></p>
+    </div>
+
+    <div class="card">
+        <h3>Edit Resources</h3>
+        <p>Edit an existing resource <i class="ri-arrow-right-line"></i></p>
+    </div>
+
+    <div class="gold-card">
+            <h3>View Sections</h3>
+            <p>List of Sections <i class="ri-arrow-right-line"></i></p>
+    
+    </div>
+</section>
+
+<script src="./JS-files/admin.js"></script>
 </body>
 </html>
